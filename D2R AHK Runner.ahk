@@ -11,14 +11,14 @@ backupOnExit = True
 launchD2ROnStartUp = False
 launchMfRunnerOnStartUp = False
 launchMfRunnerWithD2R = True
+bnetLaunchDelay = 5000
 menuDelay = 25
-newGameDelay = 3000
+newGameDelay = 4000
 textInputDelay = 50
 
 if (%launchD2ROnStartUp% = True) {
 	Run, %d2rPath%
 }
-
 if (%launchMfRunnerOnStartUp% = True) {
 	Run, %mfRunnerPath%
 }
@@ -30,9 +30,6 @@ return
 	
 ; Triggers the new game macro by pressing Shift(+), ALT(!), and Q at the same time.
 +!Q::
-	; Ends the MF Runner with the default hotkey.
-	Send, {LAlt Down}{w}, {LAlt Up}
-
 	; Exits the Game by sending ESC, UP, UP, and ENTER with a delay between the inputs.
 	Send, {Esc}
 	Sleep %menuDelay%
@@ -54,9 +51,17 @@ return
 
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and P at the same time.
 +^!P::
-	Run, %d2rPath%
+	if !WinExist("Diablo II: Resurrected") {
+		Run, %d2rPath%
+		if !WinExist("Diablo II: Resurrected") {
+			Sleep %bnetLaunchDelay%
+			Run, %d2rPath%
+		}
+	}
 	if (%launchMfRunnerWithD2R% = True) {
-		Run, %mfRunnerPath%
+		If !WinExist("MF run counter") {
+			Run, %mfRunnerPath%
+		}
 	}
 return
 

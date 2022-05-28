@@ -2,7 +2,7 @@
 
 ***NOTE - Using these scripts while playing on Battle.Net may result in you getting banned. This is for single player Only!***
 
-This is an AutoHotKey Script for D2R single player that allows you to easily exit and join new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros that will change the player's difficulty, launch D2R, launch the MF Runner and backup D2R's single player characters to a "Backups" folder in the same directory as these scripts.## 
+This is an AutoHotKey Script for Diablo II: Resurrected single player that allows you to easily exit and join new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros that will change the player's difficulty, launch D2R, launch the MF Runner and backup D2R's single player characters to a "Backups" folder in the same directory as these scripts.## 
 
 # Perquisites
 
@@ -21,11 +21,11 @@ Optional - If you want to make sure your single player characters are safely bac
 
 # Macros
 
-## Exit the current game and create new game on hell difficulty
+## Create a new game on Hell difficulty and start new MF Runner run
 
 On your keyboard press `SHIFT + ALT + Q` at the same time.
 
-This will trigger a macro that ends the current run you're on in the MF_run_counter, exits the current game you are in and starts a new game on Hell difficulty, then starts the MF_run_counter again. This macro assumes you are currently in a game so if you run this macro from the character select screen it will not work properly.
+This will exit the current game you're in, start a new game on Hell difficulty and start a new run in the MF Runner. This only works when you are already in a game. It will not work properly if you run it from the character select screen.
 
 ## Launch D2R
 
@@ -37,13 +37,13 @@ By default this will launch Diablo II Resurrected and the MF Runner. If you do n
 
 On your keyboard press `CRTL + END` at the same time.
 
-By default this will this will run a Backup and close the D2R and MF Runner windows. If you do not want create a backup when you use this hotkey you can set `backupOnExit = True` in `D2R AHK Runner.ahk`.
+By default this will this will run a Backup and close the D2R and MF Runner windows. If you do not want create a backup when you use this hotkey you can set `backupOnExit = False` in `D2R AHK Runner.ahk`.
 
 ## Launch MF_run_counter
 
 On your keyboard press `CRTL + SHIFT + ALT + M` at the same time.
 
-This will launch the MF_run_counter if it's saved in the same folder as these scripts.
+This will launch the MF Runner if it's saved in the same folder as these scripts.
 
 ## Change player's difficulty
 
