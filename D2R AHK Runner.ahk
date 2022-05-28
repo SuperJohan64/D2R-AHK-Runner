@@ -1,12 +1,12 @@
 d2rPath = "Diablo II Resurrected.lnk"
 mfTimerPath = "mf_timer.exe"
-runD2RonStartUp = False
+runD2ROnStartUp = False
 runMFTimerOnStartUp = False
 menuDelay = 10
 newGameDelay = 3000
 textInputDelay = 50
 
-if (%runD2RonStartUp% = True) {
+if (%runD2ROnStartUp% = True) {
 	Run, %d2rPath%
 }
 
