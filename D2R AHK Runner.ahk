@@ -52,7 +52,7 @@ return
 	Send, {LAlt Down}{q}, {LAlt Up}
 return
 
-; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and P at the same time.
+; Launches D2R and MF_run_counter by pressing Shift(+) CRTL(^) ALT(!) P at the same time.
 +^!P::
 	if !WinExist("Diablo II: Resurrected") {
 		Run, %d2rPath%
