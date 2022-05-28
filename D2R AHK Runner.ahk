@@ -1,11 +1,13 @@
+d2rPath = "Diablo II Resurrected.lnk"
+mfTimePath = "mf_timer.exe"
 runD2RonStartUp = False
 runMFTimeonStartUp = False
 menuDelay = 10
 newGameDelay = 3000
 textInputDelay = 50
 
-if (%runD2RonStartUp% = True) {Run, "Diablo II Resurrected.lnk"}
-if (%runD2RonStartUp% = True) {Run, "mf_timer.exe"}
+if (%runD2RonStartUp% = True) {Run, %d2rPath%}
+if (%runD2RonStartUp% = True) {Run, %mfTimePath%}
 
 ; Allows you to reload the script by pressing CRTL(^) + R at the same time.
 ^r::
@@ -36,12 +38,12 @@ return
 
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and P at the same time.
 +^!P::
-	Run, "Diablo II Resurrected.lnk"
+	Run, %d2rPath%
 return
 
 ; Runs the MF Timer by pressing Shift(+) CRTL(^) ALT(!) and M at the same time.
 +^!M::
-	Run, "mf_timer.exe"
+	Run, %mfTimePath%
 return
 
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and B at the same time.
