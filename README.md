@@ -4,7 +4,7 @@
 
 This is an AutoHotKey Scritp for D2R Single Player that allows you to easily exit and join new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros that will change the player's difficulty, launch D2R, launch the MF Runner and backup D2R's single player characters to a "Backups" folder in the same directory as these scripts.
 
-The scripts are not intended to automate any gameplay. Their purpose is to make creating games faster and give other quality of life features while farming in D2R.
+This not intended to automate any gameplay or any kind of botting. The purpose is to make creating games faster and give other quality of life features while farming in D2R.
 
 ## Perquisites
 
