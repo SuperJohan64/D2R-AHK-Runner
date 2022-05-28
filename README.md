@@ -1,5 +1,8 @@
 # D2R-AHK-Runner
-AutoHotKey Scritps for D2R Single Player
+
+This is an AutoHotKey Scritp for D2R Single Player that will allow you to easily exit and join new games while triggering the hotkeys for oskros' MF_run_counter.
+
+**NOTE - Using these scripts while playing on Battle.Net may result in you getting banned. These scripts are intended for Single Player Only!
 
 ## Perquisites
 
@@ -19,7 +22,7 @@ Optional - If you want to make sure your Single Player characters are safely bac
 
 ### Launch D2R
 
-On your keyboard CRTL + SHIFT + ALT + P at the same time.
+On your keyboard **CRTL + SHIFT + ALT + P** at the same time.
 
 This will launch a shortcut in the same folder as these scripts called "Diablo II Resurrected"
 
@@ -27,24 +30,24 @@ Make sure you have this shortcut created if you want to use this tool to launch 
 
 ### Launch MF_Run_Counter
 
-On your keyboard CRTL + SHIFT + ALT + M at the same time.
+On your keyboard **CRTL + SHIFT + ALT + M** at the same time.
 
 This will launch the MF_Run_Counter if it's saved in the same folder as these scripts.
 
 ### Create new D2R Singeplayer Game on Hell Difficulty
 
-On your keyboard press SHIFT + ALT + Q at the same time.
+On your keyboard press **SHIFT + ALT + Q** at the same time.
 
 This will trigger a macro that ends the current run you're on in the MF_Run_Counter, exits the current game you are in and starts a new game on Hell difficulty, then starts the MF_Run_Counter again.
 
 ### Change Player's Difficulty
 
-On your keyboard press CRTL + Any Numpad Number.
+On your keyboard press **CRTL + Any Numpad Number**.
 
 This will change the player's difficulty to the respective number on the numpad (except 0 and 9).
 
 ### Backup D2R Single Player Characters
 
-On your keyboard press CRTL + SHIFT + ALT + B at the same time.
+On your keyboard press **CRTL + SHIFT + ALT + B** at the same time.
 
 This will trigger a Batch and Powershell script that zip's all of your D2R single player characters and saves it in a Backup folder located in the same directory as these scripts.
