@@ -23,13 +23,13 @@ Optional - If you want to make sure your single player characters are safely bac
 
 ### Create new D2R Singeplayer Game on Hell Difficulty
 
-On your keyboard press **SHIFT + ALT + Q** at the same time.
+On your keyboard press `SHIFT + ALT + Q` at the same time.
 
 This will trigger a macro that ends the current run you're on in the MF_run_counter, exits the current game you are in and starts a new game on Hell difficulty, then starts the MF_run_counter again.
 
 ### Launch D2R
 
-On your keyboard **CRTL + SHIFT + ALT + P** at the same time.
+On your keyboard `CRTL + SHIFT + ALT + P` at the same time.
 
 This will launch a shortcut in the same folder as these scripts called "Diablo II Resurrected"
 
@@ -37,18 +37,18 @@ Make sure you have this shortcut created if you want to use this tool to launch 
 
 ### Launch MF_run_counter
 
-On your keyboard **CRTL + SHIFT + ALT + M** at the same time.
+On your keyboard `CRTL + SHIFT + ALT + M` at the same time.
 
 This will launch the MF_run_counter if it's saved in the same folder as these scripts.
 
 ### Change Player's Difficulty
 
-On your keyboard press **CRTL + Any Numpad Number**.
+On your keyboard press `CRTL + Any Numpad Number`.
 
 This will change the player's difficulty to the respective number on the numpad (except 0 and 9).
 
 ### Backup D2R Single Player Characters
 
-On your keyboard press **CRTL + SHIFT + ALT + B** at the same time.
+On your keyboard press `CRTL + SHIFT + ALT + B` at the same time.
 
 This will trigger a Batch and Powershell script that zip's all of your D2R single player characters and saves it in a Backup folder located in the same directory as these scripts.
