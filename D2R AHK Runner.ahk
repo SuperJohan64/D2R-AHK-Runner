@@ -11,7 +11,7 @@ backupOnExit = True
 launchD2ROnStartUp = False
 launchMfRunnerOnStartUp = False
 launchMfRunnerWithD2R = True
-bnetLaunchDelay = 6000
+bnetLaunchDelay = 2000
 menuDelay = 25
 newGameDelay = 4000
 textInputDelay = 50
@@ -57,8 +57,10 @@ return
 	if !WinExist("Diablo II: Resurrected") {
 		Run, %d2rPath%
 		if !WinExist("Diablo II: Resurrected") {
-			Sleep %bnetLaunchDelay%
-			Run, %d2rPath%
+			While, !WinExist("Diablo II: Resurrected") {
+				Sleep %bnetLaunchDelay%
+				Run, %d2rPath%
+			}
 		}
 	}
 	if (%launchMfRunnerWithD2R% = True) {
