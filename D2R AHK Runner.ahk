@@ -11,8 +11,8 @@ backupOnExit = True
 launchD2ROnStartUp = False
 launchMfRunnerOnStartUp = False
 launchMfRunnerWithD2R = True
-bnetLaunchDelay = 2000
-menuDelay = 25
+bnetLaunchDelay = 5000
+menuDelay = 50
 newGameDelay = 4000
 textInputDelay = 50
 
@@ -52,21 +52,19 @@ return
 	Send, {LAlt Down}{q}, {LAlt Up}
 return
 
-; Launches D2R and MF_run_counter by pressing Shift(+) CRTL(^) ALT(!) P at the same time.
+; Launches D2R and MF_run_counter (if enabled) by pressing Shift(+) CRTL(^) ALT(!) P at the same time.
 +^!P::
-	if !WinExist("Diablo II: Resurrected") {
-		Run, %d2rPath%
-		if !WinExist("Diablo II: Resurrected") {
-			While, !WinExist("Diablo II: Resurrected") {
-				Sleep %bnetLaunchDelay%
-				Run, %d2rPath%
-			}
-		}
-	}
 	if (%launchMfRunnerWithD2R% = True) {
 		If !WinExist("MF run counter") {
 			Run, %mfRunnerPath%
 		}
+	}
+	if !WinExist("Diablo II: Resurrected") {
+		While, !WinExist("Diablo II: Resurrected") {
+			Run, %d2rPath%
+			Sleep %bnetLaunchDelay%
+		}
+		WinActivate, Diablo II: Resurrected
 	}
 return
 
