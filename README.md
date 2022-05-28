@@ -27,6 +27,12 @@ On your keyboard press `SHIFT + ALT + Q` at the same time.
 
 This will exit the current game you're in, start a new game on Hell difficulty and start a new run in the MF_run_counter. This only works when you are already in a game. It will not work properly if you run it from the character select screen.
 
+## Change Players X difficulty
+
+On your keyboard press `CRTL + Any Numpad Number`.
+
+This will change the Players X difficulty to the respective number on the numpad (except 0 and 9).
+
 ## Launch D2R
 
 On your keyboard press `CRTL + SHIFT + ALT + P` at the same time.
@@ -50,9 +56,3 @@ By default this will this will run a Backup and close the D2R and MF_run_counter
 On your keyboard press `CRTL + SHIFT + ALT + B` at the same time.
 
 This will trigger a Batch and Powershell script that zip's all of your D2R single player characters and saves it in a Backup folder located in the same directory as these scripts.
-
-## Change Players X difficulty
-
-On your keyboard press `CRTL + Any Numpad Number`.
-
-This will change the Players X difficulty to the respective number on the numpad (except 0 and 9).
