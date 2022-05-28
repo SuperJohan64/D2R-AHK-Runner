@@ -21,11 +21,11 @@ Optional - If you want to make sure your single player characters are safely bac
 
 ## Macros
 
-### Create new D2R Singeplayer Game on Hell Difficulty
+### Exit the current game and create new game on hell difficulty
 
 On your keyboard press `SHIFT + ALT + Q` at the same time.
 
-This will trigger a macro that ends the current run you're on in the MF_run_counter, exits the current game you are in and starts a new game on Hell difficulty, then starts the MF_run_counter again.
+This will trigger a macro that ends the current run you're on in the MF_run_counter, exits the current game you are in and starts a new game on Hell difficulty, then starts the MF_run_counter again. This macro assumes you are currently in a game so if you run this macro from the character select screen it will not work properly.
 
 ### Launch D2R
 
@@ -41,13 +41,13 @@ On your keyboard `CRTL + SHIFT + ALT + M` at the same time.
 
 This will launch the MF_run_counter if it's saved in the same folder as these scripts.
 
-### Change Player's Difficulty
+### Change player's difficulty
 
 On your keyboard press `CRTL + Any Numpad Number`.
 
 This will change the player's difficulty to the respective number on the numpad (except 0 and 9).
 
-### Backup D2R Single Player Characters
+### Backup D2R single player characters
 
 On your keyboard press `CRTL + SHIFT + ALT + B` at the same time.
 
