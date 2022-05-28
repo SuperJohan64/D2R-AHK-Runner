@@ -29,7 +29,7 @@ This will trigger a macro that ends the current run you're on in the MF_run_coun
 
 ## Launch D2R
 
-On your keyboard `CRTL + SHIFT + ALT + P` at the same time.
+On your keyboard press `CRTL + SHIFT + ALT + P` at the same time.
 
 This will launch a shortcut in the same folder as these scripts called "Diablo II Resurrected"
 
