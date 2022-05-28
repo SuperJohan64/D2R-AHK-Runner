@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File "%~dp0Backup D2R SP.ps1
