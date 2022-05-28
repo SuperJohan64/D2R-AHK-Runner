@@ -1,6 +1,6 @@
 # D2R-AHK-Runner
 
-This is an AutoHotKey Scritp for D2R Single Player that will allow you to easily exit and join new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter).
+This is an AutoHotKey Scritp for D2R Single Player that allows you to easily exit and join new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter).
 
 ***NOTE - Using these scripts while playing on Battle.Net may result in you getting banned. These scripts are intended for Single Player Only!***
 
