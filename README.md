@@ -37,7 +37,7 @@ Make sure you have this shortcut created if you want to use this tool to launch 
 
 ## Launch MF_run_counter
 
-On your keyboard `CRTL + SHIFT + ALT + M` at the same time.
+On your keyboard press `CRTL + SHIFT + ALT + M` at the same time.
 
 This will launch the MF_run_counter if it's saved in the same folder as these scripts.
 
