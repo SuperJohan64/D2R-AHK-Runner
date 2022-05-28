@@ -11,7 +11,7 @@ backupOnExit = True
 launchD2ROnStartUp = False
 launchMfRunnerOnStartUp = False
 launchMfRunnerWithD2R = True
-bnetLaunchDelay = 5000
+bnetLaunchDelay = 6000
 menuDelay = 25
 newGameDelay = 4000
 textInputDelay = 50
@@ -30,6 +30,9 @@ return
 	
 ; Triggers the new game macro by pressing Shift(+), ALT(!), and Q at the same time.
 +!Q::
+	; Ends the current run in MF_run_counter with the default ALT + W hotkey.
+	Send {LAlt Down}{w},{LAlt Up}
+
 	; Exits the Game by sending ESC, UP, UP, and ENTER with a delay between the inputs.
 	Send, {Esc}
 	Sleep %menuDelay%
@@ -45,7 +48,7 @@ return
 	Sleep %menuDelay%
 	Send, {H}
 
-	; Starts the MF Runner with the default ALT(!) + Q at the same time.
+	; Starts a new run in MF_run_counter with the default ALT + Q hotkey.
 	Send, {LAlt Down}{q}, {LAlt Up}
 return
 
@@ -65,12 +68,12 @@ return
 	}
 return
 
-; Runs the MF Runner by pressing Shift(+) CRTL(^) ALT(!) and M at the same time.
+; Runs MF_run_counter by pressing Shift(+) CRTL(^) ALT(!) and M at the same time.
 +^!M::
 	Run, %mfRunnerPath%
 return
 
-; Closes D2R, the MF Runner, and creates a backup (if enabled) by pressing the CRTL(^) and END at the same time.
+; Closes D2R, closes MF_run_counter, and creates a backup (if enabled) by pressing the CRTL(^) and END at the same time.
 ^End::
 	if (%backupOnExit% = True)
 		Run, %backupScript%
