@@ -1,13 +1,13 @@
 # D2R-AHK-Runner
 
-This is an AutoHotKey Scritp for D2R Single Player that will allow you to easily exit and join new games while triggering the hotkeys for oskros' MF_run_counter.
+This is an AutoHotKey Scritp for D2R Single Player that will allow you to easily exit and join new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter).
 
 **NOTE - Using these scripts while playing on Battle.Net may result in you getting banned. These scripts are intended for Single Player Only!
 
 ## Perquisites
 
 1. AutoHotKey - https://www.autohotkey.com/
-2. MF_Run_Counter - https://github.com/oskros/MF_run_counter
+2. MF_run_counter - https://github.com/oskros/MF_run_counter
 
 ## Instructions
 
@@ -15,7 +15,7 @@ Optional - If you want to make sure your Single Player characters are safely bac
 
 1. Install AutoHotKey.
 2. Create a shortcut for Diablo II Resurrected in the same folder as these scripts and make sure it is called "Diablo II Resurrected".
-3. Move the MF_Run_Counter to the same folder as these scripts.
+3. Move the MF_run_counter to the same folder as these scripts.
 4. Run the "D2R AHK Runner.ahk" file and use the macros below.
 
 ## Macros
@@ -28,17 +28,17 @@ This will launch a shortcut in the same folder as these scripts called "Diablo I
 
 Make sure you have this shortcut created if you want to use this tool to launch the game.
 
-### Launch MF_Run_Counter
+### Launch MF_run_counter
 
 On your keyboard **CRTL + SHIFT + ALT + M** at the same time.
 
-This will launch the MF_Run_Counter if it's saved in the same folder as these scripts.
+This will launch the MF_run_counter if it's saved in the same folder as these scripts.
 
 ### Create new D2R Singeplayer Game on Hell Difficulty
 
 On your keyboard press **SHIFT + ALT + Q** at the same time.
 
-This will trigger a macro that ends the current run you're on in the MF_Run_Counter, exits the current game you are in and starts a new game on Hell difficulty, then starts the MF_Run_Counter again.
+This will trigger a macro that ends the current run you're on in the MF_run_counter, exits the current game you are in and starts a new game on Hell difficulty, then starts the MF_run_counter again.
 
 ### Change Player's Difficulty
 

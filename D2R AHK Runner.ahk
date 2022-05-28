@@ -21,7 +21,7 @@ return
 	
 ; Triggers the new game macro by pressing Shift(+), ALT(!), and Q at the same time.
 +!Q::
-	; Ends the MF Timer with the default hotkey.
+	; Ends the MF Runner with the default hotkey.
 	Send, {LAlt Down}{w}, {LAlt Up}
 
 	; Exits the Game by sending ESC, UP, UP, and ENTER with a delay between the inputs.
@@ -37,7 +37,7 @@ return
 	Sleep %newGameDelay%
 	Send, {Enter}, {H}
 
-	; Starts the MF Timer with the default ALT(!) + Q at the same time.
+	; Starts the MF Runner with the default ALT(!) + Q at the same time.
 	Send, {LAlt Down}{q}, {LAlt Up}
 return
 
@@ -46,7 +46,7 @@ return
 	Run, %d2rPath%
 return
 
-; Runs the MF Timer by pressing Shift(+) CRTL(^) ALT(!) and M at the same time.
+; Runs the MF Runner by pressing Shift(+) CRTL(^) ALT(!) and M at the same time.
 +^!M::
 	Run, %mfRunnerPath%
 return
