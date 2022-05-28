@@ -15,8 +15,9 @@ Optional - If you want to make sure your Single Player characters are safely bac
 
 1. Install [AutoHotKey](https://www.autohotkey.com/).
 2. Create a shortcut for Diablo II Resurrected in the same folder as these scripts and make sure it is called "Diablo II Resurrected".
-3. Move the [MF_run_counter.exe](https://github.com/oskros/MF_run_counter) to the same folder as these scripts.
-4. Run the "D2R AHK Runner.ahk" file and use the macros below.
+3. Right click on the "Diablo II Resurrected" shortcut and add `--exec="launch OSI"` to end of the Target.
+4. Move the [MF_run_counter.exe](https://github.com/oskros/MF_run_counter) to the same folder as these scripts.
+5. Run the "D2R AHK Runner.ahk" file and use the macros below.
 
 ## Macros
 
