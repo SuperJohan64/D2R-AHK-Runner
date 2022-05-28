@@ -4,20 +4,15 @@ menuDelay = 10
 newGameDelay = 3000
 textInputDelay = 50
 
-if (%runD2RonStartUp% = True) {
-	Run, "Diablo II Resurrected.lnk"
-}
-
-if (%runD2RonStartUp% = True) {
-	Run, "mf_timer.exe"
-}
+if (%runD2RonStartUp% = True) {Run, "Diablo II Resurrected.lnk"}
+if (%runD2RonStartUp% = True) {Run, "mf_timer.exe"}
 
 ; Allows you to reload the script by pressing CRTL(^) + R
 ^r::
 	Reload
 return
 	
-; Triggers the macro by pressing Shift(+) ALT(!) and Q at the same time.
+; Triggers the new game macro by pressing Shift(+) ALT(!) and Q at the same time.
 +!Q::
 	; Ends the MF Timer with the default ALT + W Hotkey
 	Send, {LAlt Down}{w}, {LAlt Up}
@@ -30,7 +25,6 @@ return
 	Send, {Down}
 	Sleep %menuDelay%
 	Send, {ENTER}
-	
 	Sleep %newGameDelay%
 
 	; Presses ENTER + H to start a new single player game on Hell difficulty
@@ -43,10 +37,9 @@ return
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and P at the same time.
 +^!P::
 	Run, "Diablo II Resurrected.lnk"
-	;Run, ".\MF Timer\mf_timer.exe"
 return
 
-; Runs the MF Timer.
+; Runs the MF Timer by pressing Shift(+) CRTL(^) ALT(!) and M at the same time.
 +^!M::
 	Run, "mf_timer.exe"
 return
