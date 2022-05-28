@@ -14,7 +14,7 @@ This is an AutoHotKey Script for Diablo II: Resurrected single player that allow
 Optional - If you want to make sure your single player characters are safely backed up run these scripts from a directory that's synced to a cloud storage service.
 
 1. Install [AutoHotKey](https://www.autohotkey.com).
-2. Create a shortcut for Diablo II Resurrected in the same folder as these scripts and make sure it is called "Diablo II Resurrected".
+2. Create a shortcut for Diablo II: Resurrected in the same folder as these scripts and make sure it is called "Diablo II Resurrected".
 3. Right click on the "Diablo II Resurrected" shortcut and add ` --exec="launch OSI"` to end of the Target's path.
 4. Move the [MF_run_counter.exe](https://github.com/oskros/MF_run_counter/releases) to the same folder as these scripts.
 5. Run the "D2R AHK Runner.ahk" file and use the macros below.

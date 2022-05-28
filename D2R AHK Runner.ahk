@@ -80,6 +80,9 @@ return
 	If WinExist("MF run counter") {
 		WinClose
 	}
+	if WinExist("Battle.net") {
+		WinClose
+	}
 return
 
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and B at the same time.
