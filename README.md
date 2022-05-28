@@ -21,37 +21,37 @@ Optional - If you want to ensure your single player characters are safely backed
 
 # Macros
 
-## Create a new game on Hell difficulty and reset the MF_run_counter
+### Create a new game on Hell difficulty and reset the MF_run_counter
 
 On your keyboard press `SHIFT + ALT + Q` at the same time.
 
 This will exit the current game you're in, start a new game on Hell difficulty and start a new run in the MF_run_counter. This only works when you are already in a game. It will not work properly if you run it from the character select screen.
 
-## Change Players X difficulty
+### Change Players X difficulty
 
 On your keyboard press `CRTL + Any Numpad Number`.
 
 This will change the Players X difficulty to the respective number on the numpad (except 0 and 9).
 
-## Launch D2R
+### Launch D2R
 
 On your keyboard press `CRTL + SHIFT + ALT + P` at the same time.
 
 By default this will launch Diablo II Resurrected and the MF_run_counter. If you do not want the MF_run_counter to run when you use this hotkey you can set `launchMfRunnerWithD2R = False` in `D2R AHK Runner.ahk`.
 
-## Launch MF_run_counter
+### Launch MF_run_counter
 
 On your keyboard press `CRTL + SHIFT + ALT + M` at the same time.
 
 This will launch the MF_run_counter if it's saved in the same folder as these scripts.
 
-## Close D2R and the MF_run_counter
+### Close D2R and the MF_run_counter
 
 On your keyboard press `CRTL + END` at the same time.
 
 By default this will this will run a Backup and close the D2R and MF_run_counter windows. If you do not want create a backup when you use this hotkey you can set `backupOnExit = False` in `D2R AHK Runner.ahk`.
 
-## Backup D2R single player characters
+### Backup D2R single player characters
 
 On your keyboard press `CRTL + SHIFT + ALT + B` at the same time.
 
