@@ -1,22 +1,24 @@
 # D2R-AHK-Runner
 
-This is an AutoHotKey Scritp for D2R Single Player that allows you to easily exit and join new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter).
+***NOTE - Using these scripts while playing on Battle.Net may result in you getting banned. This is for Single Player Only!***
 
-***NOTE - Using these scripts while playing on Battle.Net may result in you getting banned. These scripts are intended for Single Player Only!***
+This is an AutoHotKey Scritp for D2R Single Player that allows you to easily exit and join new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros that will change the player's difficulty, launch D2R, launch the MF Runner and backup D2R's single player characters to a "Backups" folder in the same directory as these scripts.
+
+The scripts are not intended to automate any gameplay. Their purpose is to make creating games faster and give other quality of life features while farming in D2R.
 
 ## Perquisites
 
-1. AutoHotKey - https://www.autohotkey.com/
-2. MF_run_counter - https://github.com/oskros/MF_run_counter
+1. AutoHotKey - https://www.autohotkey.com
+2. MF_run_counter - [https://github.com/oskros/MF_run_counter](https://github.com/oskros/MF_run_counter/releases)
 
 ## Instructions
 
 Optional - If you want to make sure your Single Player characters are safely backed up, run these scripts from a directory that's synced with Dropbox, OneDrive, Google Drive or another Cloud storage service.
 
-1. Install [AutoHotKey](https://www.autohotkey.com/).
+1. Install [AutoHotKey](https://www.autohotkey.com).
 2. Create a shortcut for Diablo II Resurrected in the same folder as these scripts and make sure it is called "Diablo II Resurrected".
 3. Right click on the "Diablo II Resurrected" shortcut and add `--exec="launch OSI"` to end of the Target.
-4. Move the [MF_run_counter.exe](https://github.com/oskros/MF_run_counter) to the same folder as these scripts.
+4. Move the [MF_run_counter.exe](https://github.com/oskros/MF_run_counter/releases) to the same folder as these scripts.
 5. Run the "D2R AHK Runner.ahk" file and use the macros below.
 
 ## Macros
