@@ -1,8 +1,14 @@
+#NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
+#WinActivateForce
+#SingleInstance force
+SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
+
 d2rPath = "Diablo II Resurrected.lnk"
 mfRunnerPath = "mf_timer.exe"
 LaunchD2ROnStartUp = False
 LaunchMfRunnerOnStartUp = False
-menuDelay = 10
+menuDelay = 25
 newGameDelay = 3000
 textInputDelay = 50
 
@@ -35,7 +41,9 @@ return
 
 	; Presses ENTER + H to start a new single player game on Hell difficulty after a delay.
 	Sleep %newGameDelay%
-	Send, {Enter}, {H}
+	Send, {Enter}
+	Sleep %menuDelay%
+	Send, {H}
 
 	; Starts the MF Runner with the default ALT(!) + Q at the same time.
 	Send, {LAlt Down}{q}, {LAlt Up}
