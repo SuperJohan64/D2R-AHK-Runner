@@ -6,8 +6,13 @@ menuDelay = 10
 newGameDelay = 3000
 textInputDelay = 50
 
-if (%runD2RonStartUp% = True) {Run, %d2rPath%}
-if (%runD2RonStartUp% = True) {Run, %mfTimePath%}
+if (%runD2RonStartUp% = True) {
+	Run, %d2rPath%
+}
+
+if (%runD2RonStartUp% = True) {
+	Run, %mfTimePath%
+}
 
 ; Allows you to reload the script by pressing CRTL(^) + R at the same time.
 ^r::
