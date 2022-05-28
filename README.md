@@ -2,7 +2,7 @@
 
 ***NOTE - Using these scripts while playing on Battle.Net may result in you getting banned. This is for single player Only!***
 
-This is an AutoHotKey Script for Diablo II: Resurrected single player that allows you to easily exit and join new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros that will change the Players X difficulty, launch D2R, launch the MF_run_counter and backup D2R's single player characters to a "Backups" folder in the same directory as these scripts.
+This is an AutoHotKey Script for Diablo II: Resurrected single player that allows you to easily exit and create new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros that will change the Players X difficulty, launch D2R, launch the MF_run_counter and backup D2R's single player characters to a "Backups" folder in the same directory as these scripts.
 
 # Perquisites
 
@@ -11,12 +11,12 @@ This is an AutoHotKey Script for Diablo II: Resurrected single player that allow
 
 # Instructions
 
-Optional - If you want to make sure your single player characters are safely backed up run these scripts from a directory that's synced to a cloud storage service.
+Optional - If you want to ensure your single player characters are safely backed up run these scripts from a directory that's synced to a cloud storage account.
 
 1. Create a shortcut for Diablo II: Resurrected in the same folder as these scripts and make sure it is called "Diablo II Resurrected".
 2. Right click on the "Diablo II Resurrected" shortcut and add ` --exec="launch OSI"` to end of the Target's path.
 3. Move the [MF_run_counter.exe](https://github.com/oskros/MF_run_counter/releases) to the same folder as these scripts.
-4. Run [MF_run_counter.exe](https://github.com/oskros/MF_run_counter/releases) and setup your profile. Refer to [oskros' README.md](https://github.com/oskros/MF_run_counter#readme) for instructions. Do not setup Automode.
+4. Run [MF_run_counter.exe](https://github.com/oskros/MF_run_counter/releases) and setup your profile. Refer to [oskros' readme](https://github.com/oskros/MF_run_counter#readme) for instructions. Do not setup Automode.
 5. Run the "D2R AHK Runner.ahk" file and use the macros below.
 
 # Macros
@@ -33,26 +33,26 @@ On your keyboard press `CRTL + SHIFT + ALT + P` at the same time.
 
 By default this will launch Diablo II Resurrected and the MF_run_counter. If you do not want the MF_run_counter to run when you use this hotkey you can set `launchMfRunnerWithD2R = False` in `D2R AHK Runner.ahk`.
 
-## Close D2R and the MF_run_counter
-
-On your keyboard press `CRTL + END` at the same time.
-
-By default this will this will run a Backup and close the D2R and MF_run_counter windows. If you do not want create a backup when you use this hotkey you can set `backupOnExit = False` in `D2R AHK Runner.ahk`.
-
 ## Launch MF_run_counter
 
 On your keyboard press `CRTL + SHIFT + ALT + M` at the same time.
 
 This will launch the MF_run_counter if it's saved in the same folder as these scripts.
 
-## Change Players X difficulty
+## Close D2R and the MF_run_counter
 
-On your keyboard press `CRTL + Any Numpad Number`.
+On your keyboard press `CRTL + END` at the same time.
 
-This will change the Players X difficulty to the respective number on the numpad (except 0 and 9).
+By default this will this will run a Backup and close the D2R and MF_run_counter windows. If you do not want create a backup when you use this hotkey you can set `backupOnExit = False` in `D2R AHK Runner.ahk`.
 
 ## Backup D2R single player characters
 
 On your keyboard press `CRTL + SHIFT + ALT + B` at the same time.
 
 This will trigger a Batch and Powershell script that zip's all of your D2R single player characters and saves it in a Backup folder located in the same directory as these scripts.
+
+## Change Players X difficulty
+
+On your keyboard press `CRTL + Any Numpad Number`.
+
+This will change the Players X difficulty to the respective number on the numpad (except 0 and 9).
