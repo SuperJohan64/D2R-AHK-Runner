@@ -6,17 +6,20 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
 d2rPath = "Diablo II Resurrected.lnk"
 mfRunnerPath = "mf_timer.exe"
-LaunchD2ROnStartUp = False
-LaunchMfRunnerOnStartUp = False
+backupScript = "Backup D2R SP.bat"
+backupOnExit = True
+launchD2ROnStartUp = False
+launchMfRunnerOnStartUp = False
+launchMfRunnerWithD2R = True
 menuDelay = 25
 newGameDelay = 3000
 textInputDelay = 50
 
-if (%LaunchD2ROnStartUp% = True) {
+if (%launchD2ROnStartUp% = True) {
 	Run, %d2rPath%
 }
 
-if (%LaunchMfRunnerOnStartUp% = True) {
+if (%launchMfRunnerOnStartUp% = True) {
 	Run, %mfRunnerPath%
 }
 
@@ -52,6 +55,9 @@ return
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and P at the same time.
 +^!P::
 	Run, %d2rPath%
+	if (%launchMfRunnerWithD2R% = True) {
+		Run, %mfRunnerPath%
+	}
 return
 
 ; Runs the MF Runner by pressing Shift(+) CRTL(^) ALT(!) and M at the same time.
@@ -59,9 +65,21 @@ return
 	Run, %mfRunnerPath%
 return
 
+; Closes D2R, the MF Runner, and creates a backup (if enabled) by pressing the CRTL(^) and END at the same time.
+^End::
+	if (%backupOnExit% = True)
+		Run, %backupScript%
+	If WinExist("Diablo II: Resurrected") {
+		WinClose
+	}
+	If WinExist("MF run counter") {
+		WinClose
+	}
+return
+
 ; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and B at the same time.
 +^!B::
-	Run, "Backup D2R SP.bat"
+	Run, %backupScript%
 return
 
 ; Macros that change the player difficulty in Diablo 2 single player by pressing CRTL (^) and a number on the keypad.

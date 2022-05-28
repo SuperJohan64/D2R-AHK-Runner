@@ -31,9 +31,13 @@ This will trigger a macro that ends the current run you're on in the MF_run_coun
 
 On your keyboard press `CRTL + SHIFT + ALT + P` at the same time.
 
-This will launch a shortcut in the same folder as these scripts called "Diablo II Resurrected"
+By default this will launch Diablo II Resurrected and the MF Runner. If you do not want the MF Runner to run when you use this hotkey you can set `launchMfRunnerWithD2R = False` in `D2R AHK Runner.ahk`.
 
-Make sure you have this shortcut created if you want to use this tool to launch the game.
+## Close D2R and the MF Runner
+
+On your keyboard press `CRTL + END` at the same time.
+
+By default this will this will run a Backup and close the D2R and MF Runner windows. If you do not want create a backup when you use this hotkey you can set `backupOnExit = True` in `D2R AHK Runner.ahk`.
 
 ## Launch MF_run_counter
 
