@@ -2,9 +2,7 @@
 
 ***NOTE - Using these scripts while playing on Battle.Net may result in you getting banned. This is for Single Player Only!***
 
-This is an AutoHotKey Scritp for D2R Single Player that allows you to easily exit and join new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros that will change the player's difficulty, launch D2R, launch the MF Runner and backup D2R's single player characters to a "Backups" folder in the same directory as these scripts.
-
-This not intended to automate any gameplay or any kind of botting. The purpose is to make creating games faster and give other quality of life features while farming in D2R.
+This is an AutoHotKey Scritp for D2R single Player that allows you to easily exit and join new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros that will change the player's difficulty, launch D2R, launch the MF Runner and backup D2R's single player characters to a "Backups" folder in the same directory as these scripts.
 
 ## Perquisites
 
@@ -13,7 +11,7 @@ This not intended to automate any gameplay or any kind of botting. The purpose i
 
 ## Instructions
 
-Optional - If you want to make sure your Single Player characters are safely backed up, run these scripts from a directory that's synced with Dropbox, OneDrive, Google Drive or another Cloud storage service.
+Optional - If you want to make sure your single player characters are safely backed up run these scripts from a directory that's synced to a cloud storage service.
 
 1. Install [AutoHotKey](https://www.autohotkey.com).
 2. Create a shortcut for Diablo II Resurrected in the same folder as these scripts and make sure it is called "Diablo II Resurrected".
