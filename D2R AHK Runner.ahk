@@ -9,8 +9,8 @@ mfRunnerPath = "mf_timer.exe"
 backupScript = "Backup D2R SP.bat"
 backupOnExit = True
 launchD2ROnStartUp = False
-launchMfRunnerOnStartUp = False
-launchMfRunnerWithD2R = True
+launchMfRunnerOnStartUp = True
+launchMfRunnerWithD2R = False
 bnetLaunchDelay = 5000
 menuDelay = 50
 newGameDelay = 4000
@@ -75,8 +75,9 @@ return
 
 ; Closes D2R, closes MF_run_counter, and creates a backup (if enabled) by pressing the CRTL(^) and END at the same time.
 ^End::
-	if (%backupOnExit% = True)
+	if (%backupOnExit% = True) {
 		Run, %backupScript%
+	}
 	If WinExist("Diablo II: Resurrected") {
 		WinClose
 	}
