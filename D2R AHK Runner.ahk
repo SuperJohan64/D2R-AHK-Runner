@@ -1,7 +1,7 @@
 #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 #WinActivateForce
 #SingleInstance force
-SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
+; SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
 d2rPath = "Diablo II Resurrected.lnk"
