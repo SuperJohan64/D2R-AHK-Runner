@@ -11,6 +11,7 @@ backupOnExit = True
 launchD2ROnStartUp = False
 launchMfRunnerOnStartUp = False
 launchMfRunnerWithD2R = True
+stopRunWhenExitingGame = True
 bnetLaunchDelay = 5000
 menuDelay = 100
 newGameDelay = 2500
@@ -46,9 +47,11 @@ return
 ; Triggers the exit and create new game macro by pressing Shift(+), ALT(!), and Q at the same time. 
 ; This will exit the current game and create a new one on Hell difficulty.
 +!Q::
-	; Ends the current run in MF_run_counter with the default ALT + W hotkey if MF_run_counter is running.
-	If WinExist("MF run counter") {
-		Send, {LAlt Down}{w},{LAlt Up}
+	If (%stopRunWhenExitingGame% = True) {
+		; Ends the current run in MF_run_counter with the default ALT + W hotkey if MF_run_counter is running.
+		If WinExist("MF run counter") {
+			Send, {LAlt Down}{w},{LAlt Up}
+		}
 	}
 
 	; Exits the Game by sending ESC, UP, UP, and ENTER with a delay between the inputs.
