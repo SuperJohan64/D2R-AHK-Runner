@@ -1,20 +1,20 @@
 #NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
 #WinActivateForce
 #SingleInstance force
-;SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
+SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
-d2rPath = "Diablo II Resurrected.lnk"
-mfRunnerPath = "mf_timer.exe"
-backupScript = "Backup D2R SP.bat"
+d2rPath := "Diablo II Resurrected.lnk"
+mfRunnerPath := "mf_timer.exe"
+backupScript := "Backup D2R SP.bat"
 backupOnExit = True
 launchD2ROnStartUp = False
 launchMfRunnerOnStartUp = False
 launchMfRunnerWithD2R = True
-stopRunWhenExitingGame = True
+pauseRunnerWhenExitingGame = True
 bnetLaunchDelay = 5000
 menuDelay = 100
-newGameDelay = 2500
+newGameDelay = 3000
 textInputDelay = 50
 
 if (%launchD2ROnStartUp% = True) {
@@ -47,7 +47,7 @@ return
 ; Triggers the exit and create new game macro by pressing Shift(+), ALT(!), and Q at the same time. 
 ; This will exit the current game and create a new one on Hell difficulty.
 +!Q::
-	If (%stopRunWhenExitingGame% = True) {
+	If (%pauseRunnerWhenExitingGame% = True) {
 		; Ends the current run in MF_run_counter with the default ALT + W hotkey if MF_run_counter is running.
 		If WinExist("MF run counter") {
 			Send, {LAlt Down}{w},{LAlt Up}
@@ -95,7 +95,9 @@ return
 
 ; Runs MF_run_counter by pressing Shift(+) CRTL(^) ALT(!) and M at the same time.
 +^!M::
-	Run, %mfRunnerPath%
+	if !WinExist("MF run counter") {	
+		Run, %mfRunnerPath%
+	}
 return
 
 ; Closes D2R, closes MF_run_counter, and creates a backup (if enabled) by pressing the CRTL(^) and END at the same time.
