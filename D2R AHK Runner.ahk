@@ -1,9 +1,8 @@
-#NoEnv ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv
 #WinActivateForce
 #SingleInstance force
-SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
-SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
-
+SendMode Input
+SetWorkingDir %A_ScriptDir%
 d2rPath := "Diablo II Resurrected.lnk"
 mfRunnerPath := "mf_timer.exe"
 backupScript := "Backup D2R SP.bat"
@@ -15,7 +14,6 @@ pauseMfRunnerWhenCreatingNewGame = True
 bnetLaunchDelay = 5000
 menuDelay = 100
 newGameDelay = 3000
-newGameRunDelay = 5000
 textInputDelay = 50
 
 if (%launchD2ROnStartUp% = True) {
@@ -30,7 +28,7 @@ if (%launchMfRunnerOnStartUp% = True) {
 	Reload
 return
 
-; Triggers the start game macro by pressing Shift(+), ALT(!), and E at the same time. 
+; Triggers the 'start game' macro by pressing Shift(+), ALT(!), and E at the same time. 
 ; This macro will create a new game on Hell difficulty from the character select screen with the currently selected character.
 +!E::
 	; Presses ENTER + H to start a new single player game on Hell difficulty after a delay.
@@ -46,7 +44,7 @@ return
 	}
 return
 
-; Triggers the exit and create new game macro by pressing Shift(+), ALT(!), and Q at the same time. 
+; Triggers the 'exit and create new game' macro by pressing Shift(+), ALT(!), and Q at the same time. 
 ; This will exit the current game and create a new one on Hell difficulty.
 +!Q::
 	If (%pauseMfRunnerWhenCreatingNewGame% = True) {
