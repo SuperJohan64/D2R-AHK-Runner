@@ -11,10 +11,11 @@ backupOnExit = True
 launchD2ROnStartUp = False
 launchMfRunnerOnStartUp = False
 launchMfRunnerWithD2R = True
-pauseRunnerWhenExitingGame = True
+pauseMfRunnerWhenCreatingNewGame = True
 bnetLaunchDelay = 5000
 menuDelay = 100
 newGameDelay = 3000
+newGameRunDelay = 5000
 textInputDelay = 50
 
 if (%launchD2ROnStartUp% = True) {
@@ -37,6 +38,7 @@ return
 	Send, {Enter}
 	Sleep %menuDelay%
 	Send, {H}
+	MouseMove, (A_ScreenWidth // 2), (A_ScreenHeight // 2)
 
 	; Starts a new run in MF_run_counter with the default ALT + Q hotkey if MF_run_counter is running.
 	If WinExist("MF run counter") {
@@ -47,7 +49,7 @@ return
 ; Triggers the exit and create new game macro by pressing Shift(+), ALT(!), and Q at the same time. 
 ; This will exit the current game and create a new one on Hell difficulty.
 +!Q::
-	If (%pauseRunnerWhenExitingGame% = True) {
+	If (%pauseMfRunnerWhenCreatingNewGame% = True) {
 		; Ends the current run in MF_run_counter with the default ALT + W hotkey if MF_run_counter is running.
 		If WinExist("MF run counter") {
 			Send, {LAlt Down}{w},{LAlt Up}
@@ -56,6 +58,7 @@ return
 
 	; Exits the Game by sending ESC, UP, UP, and ENTER with a delay between the inputs.
 	WinActivate, Diablo II: Resurrected
+	MouseMove, 0, 0
 	Send, {Esc}
 	Sleep %menuDelay%
 	Send, {Up 2}
@@ -70,6 +73,7 @@ return
 	Send, {Enter}
 	Sleep %menuDelay%
 	Send, {H}
+	MouseMove, (A_ScreenWidth // 2), (A_ScreenHeight // 2)
 
 	; Starts a new run in MF_run_counter with the default ALT + Q hotkey if MF_run_counter is running.
 	If WinExist("MF run counter") {
