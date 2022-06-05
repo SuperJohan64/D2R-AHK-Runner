@@ -88,13 +88,11 @@ return
 			Run, %mfRunnerPath%
 		}
 	}
-	if !WinExist("Diablo II: Resurrected") {
-		While, !WinExist("Diablo II: Resurrected") {
-			Run, %d2rPath%
-			Sleep %bnetLaunchDelay%
-		}
-		WinActivate, Diablo II: Resurrected
+	While, !WinExist("Diablo II: Resurrected") {
+		Run, %d2rPath%
+		Sleep %bnetLaunchDelay%
 	}
+	WinActivate, Diablo II: Resurrected
 return
 
 ; Runs MF_run_counter by pressing Shift(+) CRTL(^) ALT(!) and M at the same time.
