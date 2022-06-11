@@ -39,7 +39,7 @@ This will exit the current game you're in, start a new game on Hell difficulty a
 
 ### Change Players X difficulty
 
-On your keyboard press `CRTL + Any Numpad Number`.
+On your keyboard press `CRTL + Numpad 1-8`.
 
 This will change the Players X difficulty to the respective number on the numpad (except 0 and 9).
 
