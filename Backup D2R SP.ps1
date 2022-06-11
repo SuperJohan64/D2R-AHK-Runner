@@ -1,4 +1,4 @@
-$timeStamp = Get-Date -Format "MM-dd-yyyy HH-mm"
+$timeStamp = Get-Date -Format "MM-dd-yyyy HH-mm-ss"
 $xmlName = ($MyInvocation.MyCommand.Name).Replace("ps1","xml")
 $xmlPath = "$PSScriptRoot\$xmlName"
 $defaultSourceDirectory = "$env:USERPROFILE\Saved Games\Diablo II Resurrected"
@@ -33,7 +33,7 @@ else {
         backupDirectory = $backupDirectory
         backupFileName = $backupFileName
     }
-
+    
     $xmlData | Export-Clixml -path $xmlPath -ErrorAction Stop
 }
 
