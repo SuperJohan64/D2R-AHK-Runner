@@ -21,13 +21,19 @@ Optional - If you want to ensure your single player characters are safely backed
 
 # Macros
 
-### Start a new game on Hell difficulty and start the MF_run_counter
+### Create a new game on Hell difficulty and start the MF_run_counter
 
 On your keyboard press `SHIFT + ALT + E` at the same time.
 
 This will start a new game on Hell difficulty with the currently selected character in the charter select screen.
 
-### Create a new game on Hell difficulty and reset the MF_run_counter
+### Exit current game and stop the MF_run_counter
+
+On your keyboard press `SHIFT + ALT + W` at the same time.
+
+This will exit the current game bringing you back to the character select screen.
+
+### Exit and Create a new game on Hell difficulty and reset the MF_run_counter
 
 On your keyboard press `SHIFT + ALT + Q` at the same time.
 
