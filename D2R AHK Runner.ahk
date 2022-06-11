@@ -44,6 +44,30 @@ return
 	}
 return
 
+; Triggers the 'exit game' macro by pressing Shift(+), ALT(!), and W at the same time. 
+; This will exit the current game.
++!W::
+	If (%pauseMfRunnerWhenCreatingNewGame% = True) {
+		; Ends the current run in MF_run_counter with the default ALT + W hotkey if MF_run_counter is running.
+		If WinExist("MF run counter") {
+			Send, {LAlt Down}{w},{LAlt Up}
+		}
+	}
+
+	; Exits the Game by sending ESC, UP, UP, and ENTER with a delay between the inputs.
+	WinActivate, Diablo II: Resurrected
+	MouseMove, 0, 0
+	Send, {Esc}
+	Sleep %menuDelay%
+	Send, {Up 2}
+	Sleep %menuDelay%
+	Send, {Down}
+	Sleep %menuDelay%
+	Send, {ENTER}
+	WinActivate, Diablo II: Resurrected
+	MouseMove, 0, 0
+return
+
 ; Triggers the 'exit and create new game' macro by pressing Shift(+), ALT(!), and Q at the same time. 
 ; This will exit the current game and create a new one on Hell difficulty.
 +!Q::
