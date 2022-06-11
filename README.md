@@ -2,7 +2,7 @@
 
 ***NOTE - Using these scripts while playing on Battle.Net may result in you getting banned. This is for single player Only!***
 
-This is a collection of AutoHotKey, PowerShell, and batch scripts for Diablo II: Resurrected single player that gives you macros to easily create new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros for changing the Players X difficulty, launching D2R, launching the MF_run_counter and backing up your single player characters.
+This is a collection of AutoHotKey, PowerShell, and Batch scripts for Diablo II: Resurrected single player that gives you macros to easily create new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros for changing the Players X difficulty, launching D2R, launching the MF_run_counter and backing up your single player characters.
 
 # Perquisites
 
