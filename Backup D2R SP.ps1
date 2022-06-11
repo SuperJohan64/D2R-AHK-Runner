@@ -1,12 +1,12 @@
 $timeStamp = Get-Date -Format "MM-dd-yyyy HH-mm"
-$xmlName = "Backup D2R SP.xml"
+$xmlName = ($MyInvocation.MyCommand.Name).Replace("ps1","xml")
 $xmlPath = "$PSScriptRoot\$xmlName"
 $defaultSourceDirectory = "$env:USERPROFILE\Saved Games\Diablo II Resurrected"
 $defaultBackupDirectory = "$PSScriptRoot\Backups"
 $defaultbackupFileName = "D2R SP"
 
 if (Test-Path $xmlPath) {
-    $xmlData = Import-Clixml -Path $xmlPath
+    $xmlData = Import-Clixml -Path $xmlPath -ErrorAction Stop
 }
 else {
     $sourceDirectory = Read-Host "`nEnter the source folder for your single character backups.`nLeave blank and press enter to use the default path ($defaultSourceDirectory).`n`Source Folder Path"
@@ -38,7 +38,7 @@ else {
 }
 
 if (-not (Test-Path $xmlData.backupDirectory)) {
-    New-Item $xmlData.backupDirectory -ItemType Directory
+    New-Item $xmlData.backupDirectory -ItemType Directory -ErrorAction Stop
 }
 
 Compress-Archive -Path $xmlData.sourceDirectory -DestinationPath ($xmlData.backupDirectory + "\" + $xmlData.backupFileName + " $timeStamp.zip")
