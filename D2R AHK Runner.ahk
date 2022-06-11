@@ -140,7 +140,6 @@ return
 	}
 return
 
-; Runs the backup script by pressing Shift(+) CRTL(^) ALT(!) and B at the same time.
 ; Runs the backup script by pressing Shift(+) ALT(!) and B at the same time.
 +!B::
 	Run, %backupScript%
