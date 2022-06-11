@@ -12,7 +12,7 @@ This is a collection of AutoHotKey, PowerShell, and batch scripts for Diablo II:
 # Instructions
 
 1. Create a shortcut for Diablo II: Resurrected in the same folder as these scripts and make sure it is called "Diablo II Resurrected".
-2. Right click on the "Diablo II Resurrected" shortcut and add `    --exec="launch OSI"` to end of the Target's path.
+2. Right click on the "Diablo II Resurrected" shortcut and add ` --exec="launch OSI"` to end of the Target's path. Make sure there is a space between the path and ` --exec="launch OSI"`.
 3. Move the [MF_run_counter.exe](https://github.com/oskros/MF_run_counter/releases) to the same folder as these scripts.
 4. Run [MF_run_counter.exe](https://github.com/oskros/MF_run_counter/releases) and setup your profile. Refer to [oskros' readme](https://github.com/oskros/MF_run_counter#readme) for instructions. Do not setup Automode.
 5. Run the "D2R AHK Runner.ahk" file and use the macros below.
