@@ -45,13 +45,13 @@ This will change the Players X difficulty to the respective number on the numpad
 
 ### Launch D2R
 
-On your keyboard press `CRTL + SHIFT + ALT + P` at the same time.
+On your keyboard press `SHIFT + ALT + P` at the same time.
 
 By default this will launch Diablo II Resurrected and the MF_run_counter. If you do not want the MF_run_counter to run when you use this hotkey you can set `launchMfRunnerWithD2R = False` in `D2R AHK Runner.ahk`.
 
 ### Launch MF_run_counter
 
-On your keyboard press `CRTL + SHIFT + ALT + M` at the same time.
+On your keyboard press `SHIFT + ALT + M` at the same time.
 
 This will launch the MF_run_counter if it's saved in the same folder as these scripts.
 
@@ -63,6 +63,6 @@ By default this will this will run a Backup and close the D2R and MF_run_counter
 
 ### Backup D2R single player characters
 
-On your keyboard press `CRTL + SHIFT + ALT + B` at the same time.
+On your keyboard press `SHIFT + ALT + B` at the same time.
 
 This will trigger a Batch and Powershell script that zip's all of your D2R single player characters and saves it in a Backup folder located in the same directory as these scripts.
