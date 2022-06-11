@@ -2,7 +2,7 @@
 
 ***NOTE - Using these scripts while playing on Battle.Net may result in you getting banned. This is for single player Only!***
 
-This is an AutoHotKey Script for Diablo II: Resurrected single player that allows you to easily exit and create new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros that will change the Players X difficulty, launch D2R, launch the MF_run_counter and backup D2R's single player characters to a "Backups" folder in the same directory as these scripts.
+This is an AutoHotKey Script for Diablo II: Resurrected single player that allows you to easily exit and create new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros that will change the Players X difficulty, launch D2R, launch the MF_run_counter and backup D2R's single player characters.
 
 # Perquisites
 
