@@ -2,7 +2,7 @@
 
 ***NOTE - Using these scripts while playing on Battle.Net may result in you getting banned. This is for single player Only!***
 
-This is an AutoHotKey Script for Diablo II: Resurrected single player that allows you to easily exit and create new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros that will change the Players X difficulty, launch D2R, launch the MF_run_counter and backup D2R's single player characters.
+This is a collection of AutoHotKey, PowerShell, and batch scripts for Diablo II: Resurrected single player that gives your macros to easily exit and create new games while triggering the hotkeys for [oskros' MF_run_counter](https://github.com/oskros/MF_run_counter). It also has macros for changing the Players X difficulty, launching D2R, launching the MF_run_counter and backing your single player characters.
 
 # Perquisites
 
@@ -12,7 +12,7 @@ This is an AutoHotKey Script for Diablo II: Resurrected single player that allow
 # Instructions
 
 1. Create a shortcut for Diablo II: Resurrected in the same folder as these scripts and make sure it is called "Diablo II Resurrected".
-2. Right click on the "Diablo II Resurrected" shortcut and add ` --exec="launch OSI"` to end of the Target's path.
+2. Right click on the "Diablo II Resurrected" shortcut and add `    --exec="launch OSI"` to end of the Target's path.
 3. Move the [MF_run_counter.exe](https://github.com/oskros/MF_run_counter/releases) to the same folder as these scripts.
 4. Run [MF_run_counter.exe](https://github.com/oskros/MF_run_counter/releases) and setup your profile. Refer to [oskros' readme](https://github.com/oskros/MF_run_counter#readme) for instructions. Do not setup Automode.
 5. Run the "D2R AHK Runner.ahk" file and use the macros below.
