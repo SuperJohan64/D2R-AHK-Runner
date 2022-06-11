@@ -103,8 +103,8 @@ return
 	}
 return
 
-; Launches D2R and MF_run_counter (if enabled) by pressing Shift(+) ALT(!) P at the same time.
-+!P::
+; Launches D2R and MF_run_counter (if enabled) by pressing CRTL(^) and P at the same time.
+^P::
 	if (%launchMfRunnerWithD2R% = True) {
 		If !WinExist("MF run counter") {
 			Run, %mfRunnerPath%
@@ -117,8 +117,8 @@ return
 	WinActivate, Diablo II: Resurrected
 return
 
-; Runs MF_run_counter by pressing Shift(+) ALT(!) and M at the same time.
-+!M::
+; Runs MF_run_counter by pressing CRTL(^) and M at the same time.
+^M::
 	if !WinExist("MF run counter") {	
 		Run, %mfRunnerPath%
 	}
@@ -140,8 +140,8 @@ return
 	}
 return
 
-; Runs the backup script by pressing Shift(+) ALT(!) and B at the same time.
-+!B::
+; Runs the backup script by pressing CRTL(^) and B at the same time.
+^B::
 	Run, %backupScript%
 return
 
