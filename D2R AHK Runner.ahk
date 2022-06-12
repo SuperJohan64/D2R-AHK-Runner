@@ -20,9 +20,9 @@ textInputDelay = 50
 	Reload
 return
 
-; Triggers the 'start game' macro by pressing Shift(+), ALT(!), and E at the same time. 
+; Triggers the 'start game' macro by pressing ALT(!), and F5 at the same time. 
 ; This macro will create a new game on Hell difficulty from the character select screen with the currently selected character.
-+!E::
+!$F5::
 	; Presses ENTER + H to start a new single player game on Hell difficulty after a delay.
 	WinActivate, Diablo II: Resurrected
 	Send, {Enter}
@@ -36,9 +36,9 @@ return
 	}
 return
 
-; Triggers the 'exit game' macro by pressing Shift(+), ALT(!), and W at the same time. 
+; Triggers the 'exit game' macro by pressing ALT(!), and ESC at the same time. 
 ; This will exit the current game.
-+!W::
+!Esc::
 	If (%pauseMfRunnerWhenCreatingNewGame% = True) {
 		; Ends the current run in MF_run_counter with the default ALT + W hotkey if MF_run_counter is running.
 		If WinExist("MF run counter") {
@@ -57,12 +57,12 @@ return
 	Sleep %menuDelay%
 	Send, {ENTER}
 	WinActivate, Diablo II: Resurrected
-	MouseMove, 0, 0
+	MouseMove, (A_ScreenWidth // 2), (A_ScreenHeight // 2)
 return
 
-; Triggers the 'exit and create new game' macro by pressing Shift(+), ALT(!), and Q at the same time. 
+; Triggers the 'exit and create new game' macro by pressing ALT(!), and F1 at the same time. 
 ; This will exit the current game and create a new one on Hell difficulty.
-+!Q::
+!$F1::
 	If (%pauseMfRunnerWhenCreatingNewGame% = True) {
 		; Ends the current run in MF_run_counter with the default ALT + W hotkey if MF_run_counter is running.
 		If WinExist("MF run counter") {

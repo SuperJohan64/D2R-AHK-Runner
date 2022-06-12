@@ -17,19 +17,19 @@ This is a collection of AutoHotKey, PowerShell, and Batch scripts for Diablo II:
 
 ### Create a new game on Hell difficulty and start the MF_run_counter
 
-On your keyboard press `SHIFT + ALT + E` at the same time.
+On your keyboard press `ALT + F5` at the same time.
 
 This will start a new game on Hell difficulty with the currently selected character in the charter select screen.
 
 ### Exit current game and stop the MF_run_counter
 
-On your keyboard press `SHIFT + ALT + W` at the same time.
+On your keyboard press `ALT + Esc` at the same time.
 
 This will exit the current game bringing you back to the character select screen.
 
 ### Exit and Create a new game on Hell difficulty and reset the MF_run_counter
 
-On your keyboard press `SHIFT + ALT + Q` at the same time.
+On your keyboard press `ALT + F1` at the same time.
 
 This will exit the current game you're in, start a new game on Hell difficulty and start a new run in the MF_run_counter. This only works when you are already in a game. It will not work properly if you run it from the character select screen.
 
