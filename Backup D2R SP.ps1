@@ -9,7 +9,7 @@ if (Test-Path $xmlPath) {
     $xmlData = Import-Clixml -Path $xmlPath -ErrorAction Stop
 }
 else {
-    $sourceDirectory = Read-Host "`nEnter the source folder for your single character backups.`nLeave blank and press enter to use the default path ($defaultSourceDirectory).`n`Source Folder Path"
+    $sourceDirectory = Read-Host "`nEnter the source folder for your single character backups.`nLeave blank and press enter to use the default path ($defaultSourceDirectory).`n`nSource Folder Path"
     if ($sourceDirectory -eq "") {
         $sourceDirectory = "$defaultSourceDirectory"
     }
