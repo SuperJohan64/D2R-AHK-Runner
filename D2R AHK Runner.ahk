@@ -8,21 +8,12 @@ mfRunnerPath := "mf_timer.exe"
 backupScript := "Backup D2R SP.bat"
 backupOnExit = True
 closeBnetOnExit = True
-launchD2ROnStartUp = False
-launchMfRunnerOnStartUp = False
 launchMfRunnerWithD2R = True
 pauseMfRunnerWhenCreatingNewGame = True
 bnetLaunchDelay = 5000
 menuDelay = 100
 newGameDelay = 3000
 textInputDelay = 50
-
-if (%launchD2ROnStartUp% = True) {
-	Run, %d2rPath%
-}
-if (%launchMfRunnerOnStartUp% = True) {
-	Run, %mfRunnerPath%
-}
 
 ; Allows you to reload the script by pressing CRTL(^) + R at the same time.
 ^r::
