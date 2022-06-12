@@ -136,7 +136,7 @@ return
 	If WinExist("MF run counter") {
 		WinClose
 	}
-	if (closeBnetOnExit = True) {
+	if (%closeBnetOnExit% = True) {
 		if WinExist("Battle.net") {
 			WinClose
 		}
