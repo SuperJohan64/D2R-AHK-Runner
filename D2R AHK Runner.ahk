@@ -109,7 +109,7 @@ return
 	WinActivate, Diablo II: Resurrected
 return
 
-; Runs MF_run_counter by pressing CRTL(^) and M at the same time.
+; Opens and closes MF_run_counter by pressing CRTL(^) and M at the same time.
 ^M::
 	if !WinExist("MF run counter") {
 		Run, %mfRunnerPath%

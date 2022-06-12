@@ -45,11 +45,11 @@ On your keyboard press `CRTL + P` at the same time.
 
 By default this will launch Diablo II Resurrected and the MF_run_counter. If you do not want the MF_run_counter to run when you use this hotkey you can set `launchMfRunnerWithD2R = False` in `D2R AHK Runner.ahk`.
 
-### Launch MF_run_counter
+### Open and Close MF_run_counter
 
 On your keyboard press `CRTL + M` at the same time.
 
-This will launch the MF_run_counter if it's saved in the same folder as these scripts.
+This will launch and close the MF_run_counter if it's saved in the same folder as these scripts.
 
 ### Close D2R and the MF_run_counter
 
