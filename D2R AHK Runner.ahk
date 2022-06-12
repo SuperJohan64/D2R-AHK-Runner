@@ -7,6 +7,7 @@ d2rPath := "Diablo II Resurrected.lnk"
 mfRunnerPath := "mf_timer.exe"
 backupScript := "Backup D2R SP.bat"
 backupOnExit = True
+closeBnetOnExit = False
 launchD2ROnStartUp = False
 launchMfRunnerOnStartUp = False
 launchMfRunnerWithD2R = True
@@ -135,8 +136,10 @@ return
 	If WinExist("MF run counter") {
 		WinClose
 	}
-	if WinExist("Battle.net") {
-		WinClose
+	if (closeBnetOnExit = True) {
+		if WinExist("Battle.net") {
+			WinClose
+		}
 	}
 return
 
