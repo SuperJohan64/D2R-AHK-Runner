@@ -1,6 +1,6 @@
 #NoEnv
 #WinActivateForce
-#SingleInstance force
+; #SingleInstance force
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 d2rPath := "Diablo II Resurrected.lnk"
