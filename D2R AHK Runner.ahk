@@ -12,7 +12,7 @@ launchMfRunnerWithD2R = True
 pauseMfRunnerWhenCreatingNewGame = True
 bnetLaunchDelay = 5000
 menuDelay = 100
-newGameDelay = 3000
+newGameDelay = 2500
 textInputDelay = 50
 
 ; Allows you to reload the script by pressing CRTL(^) + R at the same time.
@@ -87,12 +87,13 @@ return
 	Send, {Enter}
 	Sleep %menuDelay%
 	Send, {H}
-	MouseMove, (A_ScreenWidth // 2), (A_ScreenHeight // 2)
 
 	; Starts a new run in MF_run_counter with the default ALT + Q hotkey if MF_run_counter is running.
 	If WinExist("MF run counter") {
 		SendInput, {LAlt Down}{q}, {LAlt Up}
 	}
+
+	MouseMove, (A_ScreenWidth // 2), (A_ScreenHeight // 2)
 return
 
 ; Launches D2R and MF_run_counter (if enabled) by pressing CRTL(^) and P at the same time.
